@@ -12,6 +12,8 @@ const Categoria = connection.define(
         }
 );
 
+//  Categoria.async({force:true});
+
 module.exports = Categoria;
 
 

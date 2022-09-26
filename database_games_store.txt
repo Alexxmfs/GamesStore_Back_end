@@ -3,7 +3,7 @@ CREATE DATABASE games_store_bd;
 USE games_store_bd;
 
 CREATE TABLE tbl_categoria(
-id int(10) unsigned auto_increment primary key,
+cod_categoria int(10) unsigned auto_increment primary key,
 nome_categoria varchar(100) not null,
 createdAt DATETIME,
 updatedAt DATETIME
