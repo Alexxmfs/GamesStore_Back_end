@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "563a7ae2-3c1d-40fa-acf7-ee198f926506",
+		"name": "Games Store Atividade",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19973632"
+	},
+	"item": [
+		{
+			"name": "CATEGORIA",
+			"item": [
+				{
+					"name": "listarCategoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/listarCategoriaJogo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarCategoriaJogo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarCategoriaID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/listarCategoriaJogo/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarCategoriaJogo",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrarCategoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_categoria\":\"RPG\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/inserirCategoriaJogo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"inserirCategoriaJogo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterarCategoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"nome_categoria\":\"EDUCATIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/alterarCategoriaJogo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alterarCategoriaJogo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluirCategoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/excluirCategoriaJogo/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"excluirCategoriaJogo",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
